@@ -1,0 +1,25 @@
+# Default values for minecraft.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# ********REQUIRED********
+node:
+  hostname: 'k3s.local' # Your kube node's hostname
+# ************************
+
+minecraft:
+  gamemode: 'survival'
+  motd: 'Thomas & Ellas Minecraft Server' # Message of the Day
+  port: 25565
+
+volume:
+  storage: 3Gi
+
+resources:
+  limits:
+    memory: 2Gi
+  requests:
+    memory: 1.5Gi
+
+serviceAccount:
+  create: true
