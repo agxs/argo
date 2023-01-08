@@ -11,6 +11,7 @@ minecraft:
   gamemode: 'survival'
   motd: 'Thomas & Ellas Minecraft Server' # Message of the Day
   port: 25565
+  externalPort: 30001
 
 volume:
   storage: 3Gi
